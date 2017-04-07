@@ -1,0 +1,40 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script>
+	<title>
+		Wikipedia viewer
+	</title>
+	<script src="wiki.js"></script>
+</head>
+<body>
+	<h1> Wikipedia viewer </h1>
+		<div>
+		<form>
+			Search:<input id = 'searchtext' type = 'text' name = 'search' value = 'Wikipedia'/>
+			Language: <select name="language" id = "lang">
+			<option value="en" selected="selected">English</option>
+			<option value="nl">Dutch</option>
+			<option value="de">German</option>
+			<option value="es">Spanish</option>
+			<option value="hi">Hindi</option>
+			<option value="sa">Sanskrit</option>
+			<option value="fr">French</option>
+			<option value="it">Italian</option>
+			<option value="la">Latin</option>
+			<option value="zh">Chinese</option>
+			<option value="ja">Japanese</option>
+			</select>
+			<input  onclick='wikisearch()', type = 'button', value = 'Go get them'>
+		</form>
+		</div>
+		<br>
+		</br>
+		<h2 id = 'title'></h2>
+		<article class="results">
+		</article>
+</body> 
+</html>
